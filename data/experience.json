@@ -1,0 +1,90 @@
+[
+    {
+        "title":"PhD Candidate",
+        "employer":"Colorado School of Mines",
+        "start":"2017-8-15T00:00:00.000Z",
+        "stop":"2021-12-20T00:00:00.000Z",
+        "city":"Golden",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Working toward development of new channel estimation technique for 5G Millimeter-Wave communications systems",
+            "Developed and verified software for the test and evaluation of estimators in 5G Millimeter-Wave communications systems"
+        ]
+    },
+    {
+        "title":"Graduate Researcher",
+        "employer":"National Institute of Standards and Technology",
+        "start":"2017-8-15T00:00:00.000Z",
+        "stop":"2021-12-20T00:00:00.000Z",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Developed measurement techniques for NIST SAMURAI Millimeter-Wave measurement system",
+            "Working with LTE and 5G hardware for development of new verification and testing techniques",
+            "Hands on learning of established measurement tools, techniques, and calibrations"
+        ]
+    },
+    {
+        "title":"Summer Intern",
+        "employer":"United Launch Alliance",
+        "start":"2015-5-15T00:00:00.000Z",
+        "stop":"2016-8-15T00:00:00.000Z",
+        "city":"Centennial",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Worked alongside engineers helping with long term Space projects",
+            "Advancing professional skills and experience working in industry"
+        ]
+    },
+    {
+        "title":"Undergraduate Research Assistant",
+        "employer":"University of Colorado",
+        "start":"2014-8-15T00:00:00.000Z",
+        "stop":"2017-5-15T00:00:00.000Z",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Simulating electromagnetic propagation with a high order finite difference algorithm",
+            "Implementing the algorithm to run on multiple parallel computing platforms"
+        ]
+    },
+    {
+        "title":"Teaching Assistant",
+        "employer":"University of Colorado",
+        "start":"2015-8-15T00:00:00.000Z",
+        "stop":"2016-5-15T00:00:00.000Z",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Working directly with students on open ended design projects for the community ",
+            "Mentoring student's professional skills and design experience"
+        ]
+    },
+    {
+        "title":"Rocket Sat X EPS Team Member",
+        "employer":"Colorado Space Grant Consortium",
+        "start":"2014-1-15T00:00:00.000Z",
+        "stop":"2014-8-15T00:00:00.000Z",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Developed an electronic system to inductively melt aluminum in under a minute",
+            "Manufactured PCB and circuit peripherals to keep large amounts of status data"
+        ]
+    },
+    {
+        "title":"Sales Associate",
+        "employer":"Merrell Shoes",
+        "start":"2013-6-15T00:00:00.000Z",
+        "stop":"2014-8-15T00:00:00.000Z",
+        "city":"Centennial",
+        "state":"Colorado",
+        "country":"USA"
+    }
+]

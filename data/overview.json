@@ -1,0 +1,12 @@
+{
+    "name":{
+        "first":"Alec",
+        "last":"Weiss"
+    },
+    "contact":{
+        "email":"aweiss7791@gmail.com",
+        "phone":"(303)-898-5066"
+    },
+    "location":"Broomfield, Colorado",
+    "objective":"I am an electrical engineering student working towards my PhD. I am currently working on RF measurement systems at the National Institute of Standards of Technology (NIST). I am interested in the areas of RF design and test, embedded systems technologies, and High-Performance Computing"
+}

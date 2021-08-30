@@ -1,0 +1,31 @@
+[
+    {
+        "date":"2017-05-10T00:00:00.000Z",
+        "degree_type":"B.S.",
+        "degree":"Electrical and Computer Engineering",
+        "institution":"University of Colorado at Boulder",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA",
+        "gpa":3.67
+    },
+    {
+        "date":"2018-12-20T00:00:00.000Z",
+        "degree_type":"B.S.",
+        "degree":"Electrical and Computer Engineering",
+        "institution":"Colorado School of Mines",
+        "city":"Golden",
+        "state":"Colorado",
+        "country":"USA",
+        "gpa":3.86
+    },
+    {
+        "date":"2021-12-20T00:00:00.000Z",
+        "degree_type":"PhD Candidate",
+        "degree":"Electrical and Computer Engineering",
+        "institution":"Colorado School of Mines",
+        "city":"Boulder",
+        "state":"Colorado",
+        "country":"USA"
+    }
+]
