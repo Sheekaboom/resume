@@ -1,3 +1,486 @@
 [
-    
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/8M9XKPZJ",
+		"type": "article-journal",
+		"abstract": "MATLAB is a good testbed for prototyping new FDTD techniques as it provides quick programming, debugging and visualization capabilities compared to lower level languages such as C or FORTRAN. However, the major disadvantage of using MATLAB is its slow execution. For faster simulations, one should use other programming languages like Fortran or C with CUDA when utilizing graphics processing units. Development of simulation codes using these other programming languages is not as easy as when using MATLAB. Thus the main objective of this paper is to investigate ways to increase the throughput of a fully functional finite difference time domain method coded in MATLAB to be able to simulate practical problems with visualization capabilities in reasonable time. We present simple ways to improve the efficiency of MATLAB simulations using the parallel toolbox along with the multi-core central processing units (CPUs) or the multiple graphics processing units (GPUs). Native and simple MATLAB constructs with no external dependencies or libraries and no expensive or complicated hardware acceleration units are used in the present development.",
+		"issue": "5",
+		"language": "en",
+		"page": "7",
+		"source": "Zotero",
+		"title": "Using MATLAB’s Parallel Processing Toolbox for Multi-CPU and Multi-GPU Accelerated FDTD Simulations",
+		"volume": "34",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec J"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef Z"
+			},
+			{
+				"family": "Demir",
+				"given": "Veysel"
+			},
+			{
+				"family": "Hadi",
+				"given": "Mohammed F"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/RVLAJKUG",
+		"type": "paper-conference",
+		"abstract": "We explore large-signal network analysis for the over-the-air test of up-converting and down-converting phased arrays. The approach first uses a vector network analyzer to characterize a three-dimensional test environment at RF. The vector network analyzer is then power- and phase-calibrated for the characterization of up-converting and down-converting phased arrays with an IF input or output. We illustrate the approach with measurements of a down-converting phased array.",
+		"container-title": "2019 IEEE MTT-S International Microwave Symposium (IMS)",
+		"DOI": "10.1109/MWSYM.2019.8700781",
+		"event": "2019 IEEE MTT-S International Microwave Symposium (IMS)",
+		"note": "ISSN: 0149-645X",
+		"page": "622-625",
+		"source": "IEEE Xplore",
+		"title": "Large-Signal Network Analysis for Over-the-Air Test of Up-Converting and Down-Converting Phased Arrays",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec J."
+			},
+			{
+				"family": "Williams",
+				"given": "Dylan F."
+			},
+			{
+				"family": "Quimby",
+				"given": "Jeanne"
+			},
+			{
+				"family": "Leonhardt",
+				"given": "Rod"
+			},
+			{
+				"family": "Choi",
+				"given": "Thomas"
+			},
+			{
+				"family": "Cheng",
+				"given": "Zihang"
+			},
+			{
+				"family": "Remley",
+				"given": "Kate A."
+			},
+			{
+				"family": "Molisch",
+				"given": "Andreas"
+			},
+			{
+				"family": "Jamroz",
+				"given": "Benjamin"
+			},
+			{
+				"family": "Rezac",
+				"given": "Jake"
+			},
+			{
+				"family": "Vouras",
+				"given": "Peter"
+			},
+			{
+				"family": "Zhang",
+				"given": "Charlie"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/YFF2P3Q5",
+		"type": "paper-conference",
+		"event": "GRADS",
+		"event-place": "Colorado School of Mines",
+		"language": "en",
+		"page": "1",
+		"publisher-place": "Colorado School of Mines",
+		"source": "Zotero",
+		"title": "Performance Analysis of Parallel Higher Order FDTD Methods",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			},
+			{
+				"family": "Hadi",
+				"given": "Mohammed"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/PZRH4NA3",
+		"type": "paper-conference",
+		"abstract": "MATLAB and Python are two commonly used scripting languages for prototyping electromagnetic problems today. Each of these languages provides access to computationally efficient functions allowing a user to easily run many math heavy problems with minimal programming. In this paper we will discuss the usage of MATLAB and a variety of libraries in Python capable of running these efficient computations. Tests will be run in both languages to compare both CPU and GPU computations. The runtimes of a variety of problems using each of these platforms will also be compared for a variety of mathematical operations typically used in electromagnetic problems. Finally, a simple angle of arrival calculation using conventional beamforming will be performed to show these speeds on a realistic problem.",
+		"container-title": "2020 International Applied Computational Electromagnetics Society Symposium (ACES)",
+		"event": "2020 International Applied Computational Electromagnetics Society Symposium (ACES)",
+		"language": "en",
+		"page": "2",
+		"source": "Zotero",
+		"title": "Computational Performance of MATLAB and Python for Electromagnetic Applications",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/KHFV7KIC",
+		"type": "paper-conference",
+		"abstract": "Investigating the improvement of MATLAB based finite difference time domain (FDTD) simulations using central processing units (CPUs) is the goal of this paper. The MATLAB parallel toolbox along with modern multi-core CPUs are used with no external dependencies or libraries and no expensive or complicated hardware acceleration units.",
+		"container-title": "2019 International Applied Computational Electromagnetics Society Symposium (ACES)",
+		"event": "2019 International Applied Computational Electromagnetics Society Symposium (ACES)",
+		"note": "ISSN: null",
+		"page": "1-2",
+		"source": "IEEE Xplore",
+		"title": "Accelerating the FDTD Algorithm on CPUs with MATLAB's Parallel Computing Toolbox",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			},
+			{
+				"family": "Elserbeni",
+				"given": "Atef"
+			},
+			{
+				"family": "Demir",
+				"given": "Veysel"
+			},
+			{
+				"family": "Hadi",
+				"given": "Mohammed"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/Q8QLDNNA",
+		"type": "thesis",
+		"language": "en",
+		"number-of-pages": "115",
+		"publisher": "Colorado School of Mines",
+		"source": "Zotero",
+		"title": "Characterization of a Vector Network Analyzer Based Millimeter-Wave Channel Sounder",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					11
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/32WCEUMC",
+		"type": "article-journal",
+		"abstract": "MATLAB and Python are two common scripting languages commonly used in computational electromagnetics. Both languages provide simple syntax and debugging tools to make even complicated tasks relatively simple. This paper studies how both languages compare in throughput for a variety of tasks when utilizing complex numbers which are common in electromagnetics applications. The compared tasks include basic operations like addition, subtraction, multiplication, and division, along with more complex operations like exponentiation, summation, Fourier transforms, and matrix solving. Each of these tests is performed for both single and double precision on the CPU. A 2D finite difference frequency domain problem and a planar array beamforming problem are also presented for comparison throughput for realistic simulations.",
+		"container-title": "In preparation for the Advanced Computational Electromagnetics Society Journal",
+		"language": "en",
+		"page": "8",
+		"source": "Zotero",
+		"title": "Performance of MATLAB and Python for Computational Electromagnetic Problems",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec J"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef Z"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/FUIP3I35",
+		"type": "speech",
+		"event": "Graduate Research and Discovery Symposium",
+		"event-place": "Colorado School of Mines",
+		"publisher-place": "Colorado School of Mines",
+		"title": "Comparing Runtimes of Python and MATLAB for Computational Electromagnetic Problems",
+		"URL": "https://youtu.be/0XeGVWLHnGE",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/CHXVHFJF",
+		"type": "paper-conference",
+		"abstract": "In this paper, we develop a flexible framework for the evaluation of a channel estimator and verify it against an analytical solution of the frequency response of ideal phased array hardware components. This evaluator is necessary to support future work in the evaluation of a new Monte-Carlo based channel estimator for 5G wireless communication devices. This new channel estimator will provide more accurate channel estimation by accounting for hardware irregularities.",
+		"container-title": "2021 United States National Committee of URSI National Radio Science Meeting (USNC-URSI NRSM)",
+		"DOI": "10.23919/USNC-URSINRSM51531.2021.9336510",
+		"event": "2021 United States National Committee of URSI National Radio Science Meeting (USNC-URSI NRSM)",
+		"page": "64-65",
+		"source": "IEEE Xplore",
+		"title": "Verification of an Evaluator for a New-Radio Channel Estimator",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "A."
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "A."
+			},
+			{
+				"family": "Quimby",
+				"given": "J."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/Y8FV9EVS",
+		"type": "paper-conference",
+		"abstract": "We provide the frequency response of a high multipath propagation channel using a narrow beamwidth synthetic aperture measurement technique from 26.5 – 40 GHz.",
+		"container-title": "2020 XXXIIIrd General Assembly and Scientific Symposium of the International Union of Radio Science",
+		"DOI": "10.23919/URSIGASS49373.2020.9232158",
+		"event": "2020 XXXIIIrd General Assembly and Scientific Symposium of the International Union of Radio Science (URSI GASS)",
+		"event-place": "Rome, Italy",
+		"ISBN": "978-94-6396-800-3",
+		"language": "en",
+		"page": "1-3",
+		"publisher": "IEEE",
+		"publisher-place": "Rome, Italy",
+		"source": "DOI.org (Crossref)",
+		"title": "Millimeter-Wave High Multipath Channel Measurements",
+		"URL": "https://ieeexplore.ieee.org/document/9232158/",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec. J."
+			},
+			{
+				"family": "Quimby",
+				"given": "Jeanne"
+			},
+			{
+				"family": "Leonhardt",
+				"given": "Rodney"
+			},
+			{
+				"family": "Jones",
+				"given": "Robert"
+			},
+			{
+				"family": "Kast",
+				"given": "Josh"
+			},
+			{
+				"family": "Jamroz",
+				"given": "Benjamin"
+			},
+			{
+				"family": "Vouras",
+				"given": "Peter"
+			},
+			{
+				"family": "Williams",
+				"given": "Dylan"
+			},
+			{
+				"family": "Remley",
+				"given": "Kate A."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					3,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					8
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/RUQ8QEVB",
+		"type": "paper-conference",
+		"abstract": "This paper discusses the configuration and control of a new millimeter wave over-the-air measurement system. This system provides unparalleled measurement accuracy, flexibility, and the ability to bound uncertainties on its measurements. The system also improves upon other millimeter wave over-the-air measurement systems by providing a high level of reconfigurability making it capable of answering many of the questions that still exist around millimeter-wave propagation and communications.",
+		"container-title": "2020 95th ARFTG Microwave Measurement Conference (ARFTG)",
+		"DOI": "10.1109/ARFTG47271.2020.9241381",
+		"event": "2020 95th ARFTG Microwave Measurement Conference (ARFTG)",
+		"event-place": "Los Angeles, CA, USA",
+		"ISBN": "978-1-72810-951-0",
+		"language": "en",
+		"page": "1-4",
+		"publisher": "IEEE",
+		"publisher-place": "Los Angeles, CA, USA",
+		"source": "DOI.org (Crossref)",
+		"title": "Configuration and Control of a Millimeter-Wave Synthetic Aperture Measurement System with Uncertainties",
+		"URL": "https://ieeexplore.ieee.org/document/9241381/",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec J."
+			},
+			{
+				"family": "Quimby",
+				"given": "Jeanne"
+			},
+			{
+				"family": "Leonhardt",
+				"given": "Rod"
+			},
+			{
+				"family": "Jamroz",
+				"given": "Ben"
+			},
+			{
+				"family": "Williams",
+				"given": "Dylan"
+			},
+			{
+				"family": "Remley",
+				"given": "Kate"
+			},
+			{
+				"family": "Vouras",
+				"given": "Peter"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2021",
+					7,
+					13
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					8,
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/local/79entdUl/items/X3MXZ6UC",
+		"type": "article-journal",
+		"abstract": "Next-generation wireless communications utilize millimeter-wave frequencies and greater bandwidths alongside large-scale phased array architectures. These additions to precursor wireless communications introduce new factors and uncertainties due to hardware non-idealities that can affect data transmission and communication functions, such as channel estimators, reducing the system performance. To ensure optimal performance, evaluation of the channel estimators requires capturing the effects of hardware non-idealities in varying phased array architectures and propagation channels. We have developed a channel estimator evaluator framework to provide a performance evaluation of orthogonal frequency division multiplexing-based channel estimators. This evaluator provides testing of millimeter-wave phased array architectures with realistic phased array hardware components and uncertainties. The evaluator generates performance metrics to help optimize estimators for various array architectures and propagation channels without the need for time- and cost-intensive measurement campaigns.",
+		"journalAbbreviation": "Submitted to Transactions on Vehicular Techologies on Aug. 6, 2021",
+		"language": "en",
+		"source": "Zotero",
+		"title": "Evaluation of Channel Estimators for Millimeter-Wave New-Radio Systems",
+		"author": [
+			{
+				"family": "Weiss",
+				"given": "Alec"
+			},
+			{
+				"family": "Elsherbeni",
+				"given": "Atef"
+			},
+			{
+				"family": "Quimby",
+				"given": "Jeanne"
+			},
+			{
+				"family": "Rezac",
+				"given": "Jake"
+			}
+		]
+	}
 ]
