@@ -2,8 +2,8 @@
     {
         "title":"PhD Candidate",
         "employer":"Colorado School of Mines",
-        "start":"2017-8-15T00:00:00.000Z",
-        "stop":"2021-12-20T00:00:00.000Z",
+        "start":"2017-8-15",
+        "stop":"2021-12-20",
         "city":"Golden",
         "state":"Colorado",
         "country":"USA",
@@ -15,8 +15,8 @@
     {
         "title":"Graduate Researcher",
         "employer":"National Institute of Standards and Technology",
-        "start":"2017-8-15T00:00:00.000Z",
-        "stop":"2021-12-20T00:00:00.000Z",
+        "start":"2017-8-15",
+        "stop":"2021-12-20",
         "city":"Boulder",
         "state":"Colorado",
         "country":"USA",
@@ -29,8 +29,8 @@
     {
         "title":"Summer Intern",
         "employer":"United Launch Alliance",
-        "start":"2015-5-15T00:00:00.000Z",
-        "stop":"2016-8-15T00:00:00.000Z",
+        "start":"2015-5-15",
+        "stop":"2016-8-15",
         "city":"Centennial",
         "state":"Colorado",
         "country":"USA",
@@ -42,8 +42,8 @@
     {
         "title":"Undergraduate Research Assistant",
         "employer":"University of Colorado",
-        "start":"2014-8-15T00:00:00.000Z",
-        "stop":"2017-5-15T00:00:00.000Z",
+        "start":"2014-8-15",
+        "stop":"2017-5-15",
         "city":"Boulder",
         "state":"Colorado",
         "country":"USA",
@@ -55,8 +55,8 @@
     {
         "title":"Teaching Assistant",
         "employer":"University of Colorado",
-        "start":"2015-8-15T00:00:00.000Z",
-        "stop":"2016-5-15T00:00:00.000Z",
+        "start":"2015-8-15",
+        "stop":"2016-5-15",
         "city":"Boulder",
         "state":"Colorado",
         "country":"USA",
@@ -68,8 +68,8 @@
     {
         "title":"Rocket Sat X EPS Team Member",
         "employer":"Colorado Space Grant Consortium",
-        "start":"2014-1-15T00:00:00.000Z",
-        "stop":"2014-8-15T00:00:00.000Z",
+        "start":"2014-1-15",
+        "stop":"2014-8-15",
         "city":"Boulder",
         "state":"Colorado",
         "country":"USA",
@@ -81,8 +81,8 @@
     {
         "title":"Sales Associate",
         "employer":"Merrell Shoes",
-        "start":"2013-6-15T00:00:00.000Z",
-        "stop":"2014-8-15T00:00:00.000Z",
+        "start":"2013-6-15",
+        "stop":"2014-8-15",
         "city":"Centennial",
         "state":"Colorado",
         "country":"USA"
