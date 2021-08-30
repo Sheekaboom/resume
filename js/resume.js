@@ -11,11 +11,11 @@ document.querySelector("#contact #location").innerText = overview['location'];
 document.querySelector("#contact #email").innerText = overview['contact']['email'];
 document.querySelector("#contact #phone").innerText = overview['contact']['phone'];
 document.querySelector("#title #name").innerText = overview['name']['first']+' '+overview['name']['last']; // set the name
-document.querySelector("#objective .section_data").innerText = overview['objective'];
+document.querySelector("#objective .data").innerText = overview['objective'];
 
 // Fill Our Education (Lets do all of them)
 var num_edu = 3;
-var edu_div = document.querySelector("#education .section_data")
+var edu_div = document.querySelector("#education .data")
 var edu_rev = education.reverse();
 var edu_list = document.createElement('ul');
 edu_div.appendChild(edu_list);
@@ -36,7 +36,7 @@ for(var i=0;i<num_edu;++i){
 }
 
 // Fill our skills (all of them again)
-var skill_div = document.querySelector("#skills .section_data");
+var skill_div = document.querySelector("#skills .data");
 var skill_list = document.createElement('ul');
 skill_div.appendChild(skill_list);
 for(var i=0;i<skills.length;++i){
@@ -48,7 +48,7 @@ for(var i=0;i<skills.length;++i){
 
 // Fill experience (top 3)
 var num_exp = 4;
-var exp_div = document.querySelector("#experience .section_data");
+var exp_div = document.querySelector("#experience .data");
 var exp_list = document.createElement('ul');
 exp_div.appendChild(exp_list);
 for(var i=0;i<num_exp;++i){
