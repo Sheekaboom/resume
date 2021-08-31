@@ -25,7 +25,8 @@ for(var i=0;i<num_edu;++i){
     var child = document.createElement('li');
     // set type of degree
     var typediv = document.createElement('div');
-    typediv.innerText = edu["degree_type"]+" | "+edu['degree'];
+    var typetext = edu["degree_type"]+" | "+edu['degree'];
+    typediv.innerText = typetext;
     // now set the school
     var schooldiv = document.createElement('div');
     schooldiv.innerText = edu['institution']+", "+edu['city']+", "+edu['state'];
@@ -58,7 +59,8 @@ for(var i=0;i<num_exp;++i){
     var head_div = document.createElement('div');
     child.appendChild(head_div);
     var start = new Date(Date.parse(exp['start'])); var stop = new Date(Date.parse(exp['stop']));
-    head_div.innerText = exp['title']+", "+exp['employer']+" ("+start.getFullYear()+"-"+stop.getFullYear()+")"
+    var headstr = exp['title']+", "+exp['employer']+" ("+start.getFullYear()+"-"+stop.getFullYear()+")"
+    head_div.innerText = headstr;
     // now add comments
     var com_div = document.createElement('ul');
     child.appendChild(com_div)
