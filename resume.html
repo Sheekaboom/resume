@@ -12,12 +12,15 @@
     <!-- Header (contact and top bar) -->
     <header>
         <div id=contact>
-            <div id=location></div>
+            <div id=address></div>
             <div id=email></div>
             <div id=phone></div>
         </div>
         <div id=title>
-            <div id=name></div>
+            <div id=name>
+                <div id=first></div>
+                <div id=last></div>
+            </div>
         </div>
     </header>
 
@@ -30,7 +33,23 @@
         </div>
         <div id=education class=section>
             <div class=title>Education</div>
-            <div class=data></div>
+            <div class=data>
+                <template id=item  class=education>
+                    <li>
+                        <div id=degree_type></div>
+                        <div id=degree></div>
+                        <div id=institution></div>
+                        <!--div class=address-->
+                        <div id=city></div>
+                        <div id=state></div>
+                        <div id=country></div>
+                        <!--/div-->
+                        <div id=date></div>
+                        <div id=gpa></div>
+                    </li>
+                </template>
+                <ul></ul>
+            </div>
         </div>
         <div id=skills class=section>
             <div class=title>Skills</div>
@@ -38,7 +57,19 @@
         </div>
         <div id=experience class=section>
             <div class=title>Experience</div>
-            <div class=data></div>
+            <div class=data>
+                <template id=item class=experience>
+                    <li>
+                        <div id=title></div>
+                        <div id=employer></div>
+                        <div id=start_data></div>
+                        <div id=end_date></div>
+                        <div id=description></div>
+                        <div id=location></div>
+                    </li>
+                </template>
+                <ul></ul>
+            </div>
         </div>
     </main>
     

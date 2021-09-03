@@ -1,3 +1,4 @@
+/* common formatting */
 :root{
 	--accent-color:#297eb3;
 }
@@ -7,10 +8,18 @@ body {
 	font-family: calibri;
 	font-size:.9em;
 }
-
+/* header info */
 header{
 	text-align:right;
 }
+/* contact things */
+header #contact #email{display:inline;}
+header #contact #email::after{content:" | ";}
+header #contact #phone{display:inline;}
+/* name things */
+header #title #name #first{display:inline;}
+header #title #name #first::after{content:" ";}
+header #title #name #last{display:inline;}
 header #title{
 	text-align:left;
 	font-size:1.8em;
@@ -21,6 +30,7 @@ header #title{
 	text-transform: uppercase;
 }
 
+/* common section formatting */
 .section{
 	display: grid;
   	grid-template-columns: repeat(20, 1fr);
@@ -72,12 +82,18 @@ header #title{
 #skills li{
 	font-weight: normal;
 }
-
-#education li div:first-child{
-	text-transform: uppercase;
-}
-
-#experience li div:first-child{
-	text-transform: uppercase;
-}
+/* education formatting */
+#education #degree_type{display:inline;font-variant: small-caps;}/*text-transform: uppercase;}*/
+#education #degree_type::after{content:" | ";}
+#education #degree{display:inline;font-variant: small-caps;}/*text-transform: uppercase;}*/
+#education #degree::after{content:"";display:block;}
+#education #institution{display:inline;}
+#education #institution::after{content:", "}
+#education #city{display:inline; } #education #city::after{content:", "}
+#education #state{display:inline; } #education #state::after{content:", "}
+#education #country{display:inline; } 
+#education #date{display:none;}
+#education #gpa{display:none;}
+/* experience formatting */
+#experience li div:first-child{font-variant: small-caps;}
 

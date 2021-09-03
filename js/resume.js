@@ -7,33 +7,30 @@ import experience from '/data/experience.json' assert {type:"json"};
 import acheivements from '/data/acheivements.json' assert {type:"json"};
 
 // now lets fill contact info, name, and objective
-document.querySelector("#contact #location").innerText = overview['location'];
+document.querySelector("#contact #address").innerText = overview['address'];
 document.querySelector("#contact #email").innerText = overview['contact']['email'];
 document.querySelector("#contact #phone").innerText = overview['contact']['phone'];
-document.querySelector("#title #name").innerText = overview['name']['first']+' '+overview['name']['last']; // set the name
+// set name
+document.querySelector("#title #name #first").innerText = overview['name']['first'];
+document.querySelector("#title #name #last").innerText = overview['name']['last']; 
+// set objective statement
 document.querySelector("#objective .data").innerText = overview['objective'];
 
 // Fill Our Education (Lets do all of them)
 var num_edu = 3;
-var edu_div = document.querySelector("#education .data")
+var edu_list = document.querySelector("#education .data ul");
 var edu_rev = education.reverse();
-var edu_list = document.createElement('ul');
-edu_div.appendChild(edu_list);
+var edu_temp = document.querySelector('#education .data #item');
 for(var i=0;i<num_edu;++i){
+    //copy the template and get our data
+    var mynode = edu_temp.content.cloneNode(true);
     var edu = edu_rev[i];
-    //add an education template
-    var child = document.createElement('li');
-    // set type of degree
-    var typediv = document.createElement('div');
-    var typetext = edu["degree_type"]+" | "+edu['degree'];
-    typediv.innerText = typetext;
-    // now set the school
-    var schooldiv = document.createElement('div');
-    schooldiv.innerText = edu['institution']+", "+edu['city']+", "+edu['state'];
-    // now add it to the education list
-    child.appendChild(typediv);
-    child.appendChild(schooldiv);
-    edu_list.appendChild(child);
+    // set the data
+    var data_vals = Array.from(mynode.children[0].children).map((x)=>x.id) // get the ids
+    // now try and set the values
+    for (var key of data_vals){ mynode.querySelector("#"+key).innerText = edu[key] || key}
+    // and append
+    edu_list.appendChild(mynode);
 }
 
 // Fill our skills (all of them again)
@@ -49,11 +46,12 @@ for(var i=0;i<skills.length;++i){
 
 // Fill experience (top 3)
 var num_exp = 4;
-var exp_div = document.querySelector("#experience .data");
-var exp_list = document.createElement('ul');
-exp_div.appendChild(exp_list);
+var exp_list = document.querySelector("#experience .data ul");
+//var exp_temp = document.querySelector("#experience .data #item")
 for(var i=0;i<num_exp;++i){
+    // get our data and our template
     var exp = experience[i];
+    //var mynode = exp_temp.content.cloneNode(true);
     var child = document.createElement('li');
     //set experience header (first div) to position title, employer, yearstart-yearend
     var head_div = document.createElement('div');
