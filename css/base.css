@@ -1,0 +1,45 @@
+/* Light Theme */
+:root{
+    --light-background:#FFF;
+    --light-foreground:#888;
+    --light-text:#888;
+	--light-accent:#297eb3;
+}
+
+/* DarkTheme */
+:root{
+    --dark-background:#000;
+    --dark-foreground:#BBB;
+    --dark-text:#BBB;
+	--dark-accent:#297eb3;
+}
+
+/* Default theme */
+:root{
+    --background-color:var(--light-background);
+    --foreground-color:var(--light-foreground);
+    --text-color:var(--light-text);
+    --accent-color:var(--light-accent);
+}
+
+/* Light Mode */
+html[data-theme="light"]{
+    --background-color:var(--light-background);
+    --foreground-color:var(--light-foreground);
+    --text-color:var(--light-text);
+    --accent-color:var(--light-accent);
+}
+
+/* Dark Mode */
+html[data-theme="dark"]{
+    --background-color:var(--dark-background);
+    --foreground-color:var(--dark-foreground);
+    --text-color:var(--dark-text);
+    --accent-color:var(--dark-accent);
+}
+
+/* set defaults unless overridden */
+html{
+    background:var(--background-color);
+    color:var(--text-color);
+}

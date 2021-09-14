@@ -1,7 +1,4 @@
 /* common formatting */
-:root{
-	--accent-color:#297eb3;
-}
 
 body {
 	margin:3% 5%;
@@ -24,7 +21,7 @@ header #title{
 	text-align:left;
 	font-size:1.8em;
 	background:var(--accent-color);
-	color:#FFF;
+	color:var(--text-color);
 	padding:5px 10px;
 	margin:5px 0px;
 	text-transform: uppercase;
