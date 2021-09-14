@@ -1,34 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme='light'>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial_scale=1, minimum-scale=1">
     <link rel="stylesheet" href="/css/base.css">
-    <title>Resume - Alec Weiss</title>
+    <link rel="stylesheet" href="/css/welcome.css">
+    <title>Home Page - Alec Weiss</title>
   </head>
   
   <body>
 
     <!-- Header (contact and top bar) -->
     <header>
+        <h1 class='page_title'>Alec Weiss</h1>
     </header>
 
     <!-- Main Content -->
     <main role="main">
-        <div id='items'>
-            <template id='link_item'>
-                <li class='link_item'>
-                    <a id=link href='/'>
-                        <div class=title>
+        <div id='page_links_div'>
+            <template id='page_link_template'>
+                <li class='page_link_item'>
+                    <a id=page_link href='/'>
+                        <div class=description>
                         </div>
                     </a>
                 </li>
             </template>
-            <ul>
-                <li class='link_item'>
-                    <a id=link href='/resume.html'>
-                        <div class=title>
-                            Resum&eacute
+            <ul class=page_links>
+                <li class='page_link_item'>
+                    <a class=page_link href='/resume.html'>
+                        <div class=description>
+                            <div class=title>Resume</div>
+                        </div>
+                    </a>
+                </li>
+                <li class='page_link_item'>
+                    <a class=page_link href='/cv.html'>
+                        <div class=description>
+                            <div class=title>Curriculum Vitae (CV)</div>
                         </div>
                     </a>
                 </li>
