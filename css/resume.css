@@ -50,6 +50,7 @@ header #title{
 	font-size:1em;
 	grid-column: 1/3;
 	text-transform: uppercase;
+	word-break:break-all;
 }
 .section .data{
 	text-align:justify;
@@ -89,8 +90,18 @@ header #title{
 #education #city{display:inline; } #education #city::after{content:", "}
 #education #state{display:inline; } #education #state::after{content:", "}
 #education #country{display:inline; } 
-#education #date{display:none;}
-#education #gpa{display:none;}
+#education #date,#gpa{display:none;}
 /* experience formatting */
+#experience < li{font-size:0px;}
+#experience li div{font-size:0.9em;}
+#experience #title{display:inline;font-variant:small-caps;}
+#experience #title::after{content:", ";}
+#experience #employer{display:inline;font-variant:small-caps;}
+#experience #employer::after{content:" (";}
+#experience #start{display:inline;}
+#experience #start::after{content:"-";}
+#experience #stop{display:inline;}
+#experience #stop::after{content:")";}
 #experience li div:first-child{font-variant: small-caps;}
+#experience #city,#state,#country{display:none;}
 

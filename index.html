@@ -13,6 +13,10 @@
     <!-- Header (contact and top bar) -->
     <header>
         <h1 class='page_title'>Alec Weiss</h1>
+        <div id='theme_selector'>
+            <input type="checkbox" name="theme_check" id="theme_check" unchecked onchange="if(document.querySelector('#theme_selector #theme_check').checked){document.querySelector('html').setAttribute('data-theme','dark')}else{document.querySelector('html').setAttribute('data-theme','light')}">
+            <!--label for="theme_check"> DarkMode</label><br-->
+        </div>
     </header>
 
     <!-- Main Content -->

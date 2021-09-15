@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial_scale=1, minimum-scale=1">
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/print.css">
     <link rel="stylesheet" href="/css/resume.css">
     <title>Resume - Alec Weiss</title>
   </head>
   
   <body>
+
+    <div id='theme_selector'>
+        <input type="checkbox" name="theme_check" id="theme_check" unchecked onchange="if(document.querySelector('#theme_selector #theme_check').checked){document.querySelector('html').setAttribute('data-theme','dark')}else{document.querySelector('html').setAttribute('data-theme','light')}">
+        <!--label for="theme_check"> DarkMode</label><br-->
+    </div>
 
     <!-- Header (contact and top bar) -->
     <header>
@@ -63,10 +69,12 @@
                     <li>
                         <div id=title></div>
                         <div id=employer></div>
-                        <div id=start_data></div>
-                        <div id=end_date></div>
-                        <div id=description></div>
-                        <div id=location></div>
+                        <div id=start></div>
+                        <div id=stop></div>
+                        <div id=city></div>
+                        <div id=state></div>
+                        <div id=country></div>
+                        <div id=comments></div>
                     </li>
                 </template>
                 <ul></ul>

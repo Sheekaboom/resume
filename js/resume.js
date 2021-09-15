@@ -47,14 +47,36 @@ for(var i=0;i<skills.length;++i){
 // Fill experience (top 3)
 var num_exp = 4;
 var exp_list = document.querySelector("#experience .data ul");
+//var edu_rev = education.reverse();
+var exp_temp = document.querySelector('#experience .data #item');
 //var exp_temp = document.querySelector("#experience .data #item")
 for(var i=0;i<num_exp;++i){
     // get our data and our template
+    var mynode = exp_temp.content.cloneNode(true);
     var exp = experience[i];
+    // some preprocessing
+    var start = new Date(Date.parse(exp['start'])); var stop = new Date(Date.parse(exp['stop']));
+    exp['start'] = start.getFullYear(); exp['stop'] = stop.getFullYear();
+    // set the data
+    var data_vals = Array.from(mynode.children[0].children).map((x)=>x.id) // get the ids
+    // now try and set the values
+    for (var key of data_vals){ mynode.querySelector("#"+key).innerText = exp[key] || key}
+    // now add comments
+    var com_list = document.createElement('ul');
+    mynode.querySelector('#comments').innerText = ''; //clear any text
+    mynode.querySelector('#comments').appendChild(com_list)
+    for(var c=0;c<exp['comments'].length;++c){
+        var com = exp['comments'][c];
+        var item = document.createElement('li');
+        item.innerText = com;
+        com_list.appendChild(item);
+    }
+    // and append
+    exp_list.appendChild(mynode);
     //var mynode = exp_temp.content.cloneNode(true);
-    var child = document.createElement('li');
+    //var child = document.createElement('li');
     //set experience header (first div) to position title, employer, yearstart-yearend
-    var head_div = document.createElement('div');
+    /*var head_div = document.createElement('div');
     child.appendChild(head_div);
     var start = new Date(Date.parse(exp['start'])); var stop = new Date(Date.parse(exp['stop']));
     var headstr = exp['title']+", "+exp['employer']+" ("+start.getFullYear()+"-"+stop.getFullYear()+")"
@@ -69,7 +91,7 @@ for(var i=0;i<num_exp;++i){
         com_div.appendChild(item);
     }
     // now append it to the list
-    exp_list.append(child);
+    exp_list.append(child);*/
 }
 
 // Acheivements (Don't add for now)

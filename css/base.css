@@ -43,3 +43,23 @@ html{
     background:var(--background-color);
     color:var(--text-color);
 }
+
+#theme_selector{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding:20px;
+}
+
+@media print{
+    /* make sure were using light mode */
+    html{
+        --background-color:var(--light-background) !important;
+        --foreground-color:var(--light-foreground) !important;
+        --text-color:var(--light-text) !important;
+        --accent-color:var(--light-accent); !important
+    }
+    #theme_selector{
+        visibility: hidden !important;
+    }
+}
