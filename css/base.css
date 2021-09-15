@@ -62,4 +62,10 @@ html{
     #theme_selector{
         visibility: hidden !important;
     }
+    @page{
+        margin: 15mm 15mm; 
+    }
+    body{
+        margin:0 !important;
+    }
 }

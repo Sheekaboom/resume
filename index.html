@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width,initial_scale=1, minimum-scale=1">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/welcome.css">
+    <script src='/js/theme.js'></script>
     <title>Home Page - Alec Weiss</title>
   </head>
   
   <body>
 
+    <div id='theme_selector'>
+        <input type="checkbox" name="theme_check" id="theme_check" unchecked onchange="if(document.querySelector('#theme_selector #theme_check').checked){var theme='dark'}else{var theme='light'};set_theme(theme);document.querySelector('html').setAttribute('data-theme',theme);">
+        <!--label for="theme_check"> DarkMode</label><br-->
+    </div>
+
     <!-- Header (contact and top bar) -->
     <header>
         <h1 class='page_title'>Alec Weiss</h1>
-        <div id='theme_selector'>
-            <input type="checkbox" name="theme_check" id="theme_check" unchecked onchange="if(document.querySelector('#theme_selector #theme_check').checked){document.querySelector('html').setAttribute('data-theme','dark')}else{document.querySelector('html').setAttribute('data-theme','light')}">
-            <!--label for="theme_check"> DarkMode</label><br-->
-        </div>
     </header>
 
     <!-- Main Content -->
@@ -54,6 +56,11 @@
     
   </body>
 
-  <!-- Load in data from json files -->
+  <!-- Set the theme check button -->
+  <script>
+        var theme=get_theme();
+        if(theme=='dark'){document.querySelector('#theme_selector #theme_check').checked=true;}
+        else{document.querySelector('#theme_selector #theme_check').checked=false;}
+  </script>
 
 </html>
