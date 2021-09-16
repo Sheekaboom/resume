@@ -57,7 +57,7 @@ html{
         --background-color:var(--light-background) !important;
         --foreground-color:var(--light-foreground) !important;
         --text-color:var(--light-text) !important;
-        --accent-color:var(--light-accent); !important
+        --accent-color:var(--light-accent) !important;
     }
     #theme_selector{
         visibility: hidden !important;
