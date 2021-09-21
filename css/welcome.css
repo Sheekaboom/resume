@@ -1,19 +1,41 @@
 .page_title{
     font-size:xx-large;
-    height:100px;
     width:100%;
     text-align:center;
+    margin:3% 0;
+    padding:0;
 }
-
+#my_social_buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 3% 0 0 0;
+}
 #page_links_div{
     margin:0;
     width:100%;
-    height:500px;
     display:flex;
     justify-content:center;
     align-items: center;
 }
-
+#face_container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:150px;
+    width:100%;
+    margin: 3% 0;
+}
+#my_face{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    border-radius:50%;
+    height:150px;
+    width:150px;
+}
+#my_face img{width:200px;height:auto;}
 .page_links{
     display:grid;
     width:100%;
@@ -24,7 +46,7 @@
     row-gap:10px;
     list-style-type:none;
     padding:0;
-    margin:15%;
+    margin:3%;
 }
 
 .page_link_item{

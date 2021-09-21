@@ -1,0 +1,27 @@
+.share-box a {
+    display: inline-block;
+    -webkit-box-shadow: 0 0 1px #777;
+    box-shadow: 0 0 1px #777;
+    padding: 5px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-decoration: none;}
+.share-box a:hover {
+    text-decoration: none;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;}
+.pt_share {color: #E60023;}
+.pt_share:hover {color: #fff;background-color: #E60023;}
+.fb_share {color: #3b5998;}
+.fb_share:hover {color: #fff;background-color: #3b5998;}
+.tw_share {color: #4099FF;}
+.tw_share:hover {color: #fff;background-color: #4099FF;}
+.rd_share {color: #ff5700;}
+.rd_share:hover {color: #fff;background-color: #ff5700;}
+.ln_share {color: #0077b5;}
+.ln_share:hover {color: #fff;background-color: #0077b5;}
+.em_share {color: #FFA500;}
+.em_share:hover {color: #fff;background-color: #FFA500;}
+.gh_share {color: #6e5494;}
+.gh_share:hover {color: #fff;background-color: #6e5494;}
