@@ -7,12 +7,13 @@ import experience from '/data/experience.json' assert {type:"json"};
 import acheivements from '/data/acheivements.json' assert {type:"json"};
 
 // now lets fill contact info, name, and objective
-document.querySelector("#contact #address").innerText = overview['address'];
-document.querySelector("#contact #email").innerText = overview['contact']['email'];
-document.querySelector("#contact #phone").innerText = overview['contact']['phone'];
+document.querySelector(".contact .address").innerText = overview['address'];
+document.querySelector(".contact .email").innerText = overview['contact']['email'];
+document.querySelector(".contact .phone").innerText = overview['contact']['phone'];
+document.querySelector(".contact .website").innerText = overview['website'];
 // set name
-document.querySelector("#title #name #first").innerText = overview['name']['first'];
-document.querySelector("#title #name #last").innerText = overview['name']['last']; 
+document.querySelector(".name .first").innerText = overview['name']['first'];
+document.querySelector(".name .last").innerText = overview['name']['last']; 
 // set objective statement
 document.querySelector("#objective .data").innerText = overview['objective'];
 
@@ -56,7 +57,7 @@ for(var i=0;i<num_exp;++i){
     var exp = experience[i];
     // some preprocessing
     var start = new Date(Date.parse(exp['start'])); var stop = new Date(Date.parse(exp['stop']));
-    exp['start'] = start.getFullYear(); exp['stop'] = stop.getFullYear();
+    exp['start'] = start.getMonth()+'/'+start.getFullYear(); exp['stop'] = stop.getMonth()+'/'+stop.getFullYear();
     // set the data
     var data_vals = Array.from(mynode.children[0].children).map((x)=>x.id) // get the ids
     // now try and set the values

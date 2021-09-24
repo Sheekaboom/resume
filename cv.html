@@ -21,15 +21,16 @@
 
     <!-- Header (contact and top bar) -->
     <header>
-        <div id=contact>
-            <div id=address></div>
-            <div id=email></div>
-            <div id=phone></div>
+        <div role=contact class=contact>
+            <div role=address class=address></div>
+            <div role=email class=email></div>
+            <div role=phone class=phone></div>
+            <div role=website class=website></div>
         </div>
         <div id=title>
-            <div id=name>
-                <div id=first></div>
-                <div id=last></div>
+            <div role=name class=name>
+                <div class=first></div>
+                <div class=last></div>
             </div>
         </div>
     </header>
@@ -99,7 +100,7 @@
   </body>
 
   <!-- Load in data from json files -->
-  <script type=module src='/js/resume.js'></script>
+  <!--script type=module src='/js/resume.js'></script-->
   <script type=module src='/js/cv.js'></script>
   <!-- Set the theme check button -->
   <script>

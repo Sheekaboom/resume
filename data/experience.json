@@ -8,8 +8,9 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Working toward development of new channel estimation technique for 5G Millimeter-Wave communications systems",
-            "Developed and verified software for the test and evaluation of estimators in 5G Millimeter-Wave communications systems"
+            "Researching the usage of Monte Carlo techniques to improve channel estimation for fifth-generation millimeter-wave wireless communication systems",
+            "Developed and verified software to simulate RF hardware in large-scale phased arrays and measured wireless propagation channels to evaluate channel estimators in 5G Millimeter-Wave communications systems.",
+            "Accelerated simulations of RF hardware and electromagnetic simulations using multiple GPUs and distributed computing systems."
         ]
     },
     {
@@ -21,9 +22,9 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Developed measurement techniques for NIST SAMURAI Millimeter-Wave measurement system",
-            "Working with LTE and 5G hardware for development of new verification and testing techniques",
-            "Hands on learning of established measurement tools, techniques, and calibrations"
+            "Creating new measurement and verification techniques with LTE and 5G devices for the detection of anomalies in communications systems.",
+            "Developed software and measurement techniques for wideband wireless virtual array measurements with the NIST SAMURAI system.",
+            "learned established measurement tools, techniques, and calibrations from experts with hands-on instruction."
         ]
     },
     {
@@ -35,8 +36,9 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Worked alongside engineers helping with long term Space projects",
-            "Advancing professional skills and experience working in industry"
+            "Helped coordinate the development of tools for future human space launch systems",
+            "Worked with a team to analyze accidents and errors that occured during the construction and launch of aerospace systems.",
+            "Advancing professional skills and experience working with teams of engineers from various backgrounds"
         ]
     },
     {
@@ -48,8 +50,9 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Simulating electromagnetic propagation with a high order finite difference algorithm",
-            "Implementing the algorithm to run on multiple parallel computing platforms"
+            "Simulated electromagnetic propagation with a high-order finite difference time domain (FDTD) algorithm.",
+            "Implementted electromagnetic simulations on GPUs and a supercomputer using CUDA and MPI.",
+            "Developed methods for integrating high-order algorithms and complex CAD models into existing simulation software."
         ]
     },
     {
@@ -61,8 +64,8 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Working directly with students on open ended design projects for the community ",
-            "Mentoring student's professional skills and design experience"
+            "Worked with new students on open ended engineering design projects to better the local community.",
+            "Mentored student's professional skills and design experience to help them get started in their college careers as engineering students."
         ]
     },
     {
@@ -74,8 +77,8 @@
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Developed an electronic system to inductively melt aluminum in under a minute",
-            "Manufactured PCB and circuit peripherals to keep large amounts of status data"
+            "Developed an electronic system to inductively melt aluminum in under a minute.",
+            "Manufactured PCBs and circuit peripherals to track and store sensor measurements from the system."
         ]
     },
     {
@@ -85,6 +88,9 @@
         "stop":"2014-8-15",
         "city":"Centennial",
         "state":"Colorado",
-        "country":"USA"
+        "country":"USA",
+        "comments":[
+            "Assisted customers in finding shoes that matched their applications."
+        ]
     }
 ]

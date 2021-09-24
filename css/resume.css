@@ -1,25 +1,20 @@
 /* common formatting */
-
 body {
 	margin:3% 5%;
-	font-family: calibri;
-	font-size:.9em;
+	font-family: Arial;
+	font-size:10pt;
 }
 /* header info */
-header{
-	text-align:right;
-}
-/* contact things */
-header #contact #email{display:inline;}
-header #contact #email::after{content:" | ";}
-header #contact #phone{display:inline;}
-/* name things */
-header #title #name #first{display:inline;}
-header #title #name #first::after{content:" ";}
-header #title #name #last{display:inline;}
+header{text-align:right;}
+/* contact layout */
+.contact .email,.phone{display:inline;}
+.contact .email::after{content:" | ";}
+/* name layout */
+.name .first,.last{display:inline;} 
+.name .first::after{content:" ";}
 header #title{
 	text-align:left;
-	font-size:1.8em;
+	font-size:16pt;
 	background:var(--accent-color);
 	color:var(--text-color);
 	padding:5px 10px;
@@ -33,9 +28,7 @@ header #title{
   	grid-template-columns: repeat(20, 1fr);
 	grid-column-gap:5px;
 }
-.section:first-of-type{
-	margin-top:1.2em;
-}
+.section:first-of-type{margin-top:1.2em;}
 .section:not(:last-child):after { 
 	width:100%;
         grid-column:1/end;	
@@ -48,7 +41,7 @@ header #title{
 /* section info*/
 .section .title{
 	color:var(--accent-color);
-	font-size:1em;
+	font-size:10pt;
 	grid-column: 1/4;
 	text-transform: uppercase;
 	word-break:break-all;
@@ -56,6 +49,7 @@ header #title{
 .section .data{
 	text-align:justify;
 	display:inline;
+	margin-right:15px;
 	grid-column: 4/end;
 }
 .section .data ul{
@@ -82,27 +76,21 @@ header #title{
 	font-weight: normal;
 }
 /* education formatting */
-#education #degree_type{display:inline;font-variant: small-caps;}/*text-transform: uppercase;}*/
+#education #degree_type,#degree{display:inline;font-variant: none;}/*text-transform: uppercase;}*/
 #education #degree_type::after{content:" | ";}
-#education #degree{display:inline;font-variant: small-caps;}/*text-transform: uppercase;}*/
 #education #degree::after{content:"";display:block;}
 #education #institution{display:inline;}
 #education #institution::after{content:", "}
-#education #city{display:inline; } #education #city::after{content:", "}
-#education #state{display:inline; } #education #state::after{content:", "}
-#education #country{display:inline; } 
+#education #city,#state,#country{display:inline; } 
+#education #city,#state::after{content:", "}
 #education #date,#gpa{display:none;}
 /* experience formatting */
 #experience < li{font-size:0px;}
-#experience li div{font-size:0.9em;}
-#experience #title{display:inline;font-variant:small-caps;}
+#experience #title,#employer{display:inline;}
 #experience #title::after{content:", ";}
-#experience #employer{display:inline;font-variant:small-caps;}
-#experience #employer::after{content:" (";}
-#experience #start{display:inline;}
-#experience #start::after{content:"-";}
-#experience #stop{display:inline;}
+#experience #start,#stop{display:inline;}
+#experience #start::before{content:" (";display:inline;}
+#experience #start::after{content:" -";}
 #experience #stop::after{content:")";}
-#experience li div:first-child{font-variant: small-caps;}
 #experience #city,#state,#country{display:none;}
 
