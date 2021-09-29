@@ -44,7 +44,7 @@ html{
     color:var(--text-color);
 }
 
-#theme_selector{
+theme-selector{
     position: fixed;
     bottom: 0;
     right: 0;

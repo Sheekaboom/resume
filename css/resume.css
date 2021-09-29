@@ -75,22 +75,3 @@ header #title{
 #skills li{
 	font-weight: normal;
 }
-/* education formatting */
-#education #degree_type,#degree{display:inline;font-variant: none;}/*text-transform: uppercase;}*/
-#education #degree_type::after{content:" | ";}
-#education #degree::after{content:"";display:block;}
-#education #institution{display:inline;}
-#education #institution::after{content:", "}
-#education #city,#state,#country{display:inline; } 
-#education #city,#state::after{content:", "}
-#education #date,#gpa{display:none;}
-/* experience formatting */
-#experience < li{font-size:0px;}
-#experience #title,#employer{display:inline;}
-#experience #title::after{content:", ";}
-#experience #start,#stop{display:inline;}
-#experience #start::before{content:" (";display:inline;}
-#experience #start::after{content:" -";}
-#experience #stop::after{content:")";}
-#experience #city,#state,#country{display:none;}
-

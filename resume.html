@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial_scale=1, minimum-scale=1">
     <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/print.css">
     <link rel="stylesheet" href="/css/resume.css">
     <script src='/js/theme.js'></script>
     <title>Resume - Alec Weiss</title>
@@ -20,12 +19,9 @@
     </script>
   </head>
   
-  <body>
+  <body style='display:none'>
 
-    <div id='theme_selector'>
-        <input type="checkbox" name="theme_check" id="theme_check" unchecked onchange="if(document.querySelector('#theme_selector #theme_check').checked){var theme='dark'}else{var theme='light'};set_theme(theme);document.querySelector('html').setAttribute('data-theme',theme);">
-        <!--label for="theme_check"> DarkMode</label><br-->
-    </div>
+    <theme-selector></theme-selector>
 
     <!-- Header (contact and top bar) -->
     <header>
@@ -45,53 +41,12 @@
 
     <!-- Main Content -->
     <main role="main">
-        <!-- Objective statement -->
-        <div id=objective class=section>
-            <div class=title>Overview</div>
-            <div class=data></div>
-        </div>
-        <div id=education class=section>
-            <div class=title>Education</div>
-            <div class=data>
-                <template id=item  class=education>
-                    <li>
-                        <div id=degree_type></div>
-                        <div id=degree></div>
-                        <div id=institution></div>
-                        <!--div class=address-->
-                        <div id=city></div>
-                        <div id=state></div>
-                        <div id=country></div>
-                        <!--/div-->
-                        <div id=date></div>
-                        <div id=gpa></div>
-                    </li>
-                </template>
-                <ul></ul>
-            </div>
-        </div>
-        <div id=skills class=section>
-            <div class=title>Skills</div>
-            <div class=data></div>
-        </div>
-        <div id=experience class=section>
-            <div class=title>Experience</div>
-            <div class=data>
-                <template id=item class=experience>
-                    <li>
-                        <div id=title></div>
-                        <div id=employer></div>
-                        <div id=start></div>
-                        <div id=stop></div>
-                        <div id=city></div>
-                        <div id=state></div>
-                        <div id=country></div>
-                        <div id=comments></div>
-                    </li>
-                </template>
-                <ul></ul>
-            </div>
-        </div>
+        
+        <resume-objective></resume-objective>
+        <resume-education count=3></resume-education>
+        <resume-skills></resume-skills>
+        <resume-work-experience count=4></resume-work-experience>
+    
     </main>
     
     <footer></footer>
@@ -100,11 +55,8 @@
 
   <!-- Load in data from json files -->
   <script type=module src='/js/resume.js'></script>
-  <!-- Set the theme check button -->
-  <script>
-    var theme=get_theme();
-    if(theme=='dark'){document.querySelector('#theme_selector #theme_check').checked=true;}
-    else{document.querySelector('#theme_selector #theme_check').checked=false;}
-  </script>
+  <!-- Set the webcomponents -->
+  <script src='/components/common.js'></script>
+  <script type='module' src='/components/resume.js'></script>
 
 </html>
