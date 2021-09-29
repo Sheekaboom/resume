@@ -28,11 +28,11 @@ header #title{
   	grid-template-columns: repeat(20, 1fr);
 	grid-column-gap:5px;
 }
-.section:first-of-type{margin-top:1.2em;}
+.section:first-child{margin-top:1.2em;}
 .section:not(:last-child):after { 
 	width:100%;
         grid-column:1/end;	
-	margin:25px 0px;  
+	margin:15px 0px;  
 	height:2px; 
 	background: var(--accent-color); 
 	content:"" 

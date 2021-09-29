@@ -59,7 +59,7 @@ theme-selector{
         --text-color:var(--light-text) !important;
         --accent-color:var(--light-accent) !important;
     }
-    #theme_selector{
+    input{
         visibility: hidden !important;
     }
     @page{
