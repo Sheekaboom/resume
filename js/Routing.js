@@ -26,7 +26,7 @@ function render(){
 function navTo(url,animate=true){
     if(animate){
         let content_div = document.querySelector('#content');
-        let dur = 0.15;
+        let dur = 0.25;
         content_div.style.transitionDuration=dur.toString()+'s';
         content_div.style.opacity = '0%';
         history.pushState(null,null,url);
