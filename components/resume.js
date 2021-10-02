@@ -120,7 +120,7 @@ customElements.define('resume-work-experience', class extends HTMLElement {
             <template id=item class=experience>
                 <li>
                     <div class=position></div><div class=employer></div>
-                    <div class=start></div><div class=stop></div>
+                    <div class='start_formatted start'></div><div class='stop_formatted stop'></div>
                     <div class=city></div><div class=state></div><div class=country></div>
                     <div class=comments></div>
                 </li>
@@ -139,7 +139,7 @@ customElements.define('resume-work-experience', class extends HTMLElement {
             var val = data[i];
             // some preprocessing
             var start = new Date(Date.parse(val['start'])); var stop = new Date(Date.parse(val['stop']));
-            val['start'] = start.getMonth()+'/'+start.getFullYear(); val['stop'] = stop.getMonth()+'/'+stop.getFullYear();
+            val['start_formatted'] = start.getMonth()+'/'+start.getFullYear(); val['stop_formatted'] = stop.getMonth()+'/'+stop.getFullYear();
             // set the data
             var data_vals = Array.from(mynode.children[0].children).map((x)=>x.classList[0]) // get the ids
             // now try and set the values
