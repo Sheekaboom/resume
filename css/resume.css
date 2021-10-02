@@ -6,21 +6,6 @@ body {
 }
 /* header info */
 header{text-align:right;}
-/* contact layout */
-.contact .email,.phone{display:inline;}
-.contact .email::after{content:" | ";}
-/* name layout */
-.name .first,.last{display:inline;} 
-.name .first::after{content:" ";}
-header #title{
-	text-align:left;
-	font-size:16pt;
-	background:var(--accent-color);
-	color:var(--text-color);
-	padding:5px 10px;
-	margin:5px 0px;
-	text-transform: uppercase;
-}
 
 /* common section formatting */
 .section{

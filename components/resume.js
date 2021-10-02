@@ -6,6 +6,54 @@ import experience from '/data/experience.json' assert {type:"json"};
 import skills from '/data/skills.json' assert {type:"json"};
 import publications from '/data/publications.json' assert {type:"json"};
 
+// element for header
+customElements.define('resume-header', class extends HTMLElement {
+    constructor() {
+      super();
+      // start by adding default html and attributes
+      this.id = 'resume-header'
+      let shadow = this;//.attachShadow({mode:'open'})
+      shadow.innerHTML = `
+        <style>
+        .contact .email,.phone{display:inline;}
+        .contact .email::after{content:" | ";}
+        .name .first,.last{display:inline;} 
+        .name .first::after{content:" ";}
+        header #title{
+            text-align:left;
+            font-size:16pt;
+            background:var(--accent-color);
+            color:var(--text-color);
+            padding:5px 10px;
+            margin:5px 0px;
+            text-transform: uppercase;
+        }
+        </style>
+        <div>
+            <div role=contact class=contact>
+            <div role=address class=address></div>
+            <div role=email class=email></div>
+            <div role=phone class=phone></div>
+            <div role=website class=website></div>
+        </div>
+        <div id=title>
+            <div role=name class=name>
+                <div class=first></div>
+                <div class=last></div>
+            </div>
+        </div>`;
+        // now lets fill contact info, name, and objective
+        document.querySelector(".contact .address").innerText = overview['address'];
+        document.querySelector(".contact .email").innerText = overview['contact']['email'];
+        document.querySelector(".contact .phone").innerText = overview['contact']['phone'];
+        document.querySelector(".contact .website").innerText = overview['website'];
+        // set name
+        document.querySelector(".name .first").innerText = overview['name']['first'];
+        document.querySelector(".name .last").innerText = overview['name']['last']; 
+      }
+    }
+  );
+
 // element for education
 customElements.define('resume-education', class extends HTMLElement {
     constructor() {

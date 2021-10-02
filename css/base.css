@@ -69,3 +69,8 @@ theme-selector{
         margin:0 !important;
     }
 }
+
+.slide_out{
+    transform: translateY(-100vh);
+    transition-duration:0.3s;
+}
