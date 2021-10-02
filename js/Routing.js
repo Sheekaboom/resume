@@ -58,5 +58,5 @@ customElements.define('a-local',
           let new_url = window.location.origin+(this.getAttribute('href') || '/');
           navTo(new_url)
       });
-  }
+    }
 });
