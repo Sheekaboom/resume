@@ -51,7 +51,6 @@ function HomePage(){
     
     <!-- links to all of my social media platforms -->
     <div id='my_social_buttons' >
-        <link rel="stylesheet" href="/css/my_socials.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <div class="share-box">
             <!-- Linkedin -->

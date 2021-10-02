@@ -7,6 +7,7 @@ customElements.define('common-head',
   <meta name="viewport" content="width=device-width,initial_scale=1, minimum-scale=1">
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/resume.css">
+  <link rel="stylesheet" href="/css/my_socials.css">
   <link rel="stylesheet" href="/css/welcome.css">
   <title>${this.getAttribute('title') || 'Page'} - Alec Weiss</title>
 
