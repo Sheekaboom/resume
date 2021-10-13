@@ -6,6 +6,16 @@ import experience from '/data/experience.json' assert {type:"json"};
 import skills from '/data/skills.json' assert {type:"json"};
 import publications from '/data/publications.json' assert {type:"json"};
 
+//some useful formatting functions
+// some useful lambda functions
+var format_section_head = (title)=> title.toUpperCase()+'\n'+'#'.repeat(25)+'\n';
+var format_list = (list,level=1)=> list.map((v)=>' '.repeat(2*level)+'  - '+v).join('\n')
+var format_enum = (list,level=1,start=0)=> list.map((v,i)=>' '.repeat(2*level)+`  ${i+start}. `+v).join('\n')
+var format_date = (date)=> {
+    var date = new Date(Date.parse(date));
+    return date.getMonth()+1+'/'+date.getFullYear()
+}
+
 // element for header
 customElements.define('resume-header', class extends HTMLElement {
     constructor() {
@@ -31,31 +41,44 @@ customElements.define('resume-header', class extends HTMLElement {
         </style>
         <div>
             <div role=contact class=contact>
-            <div role=address class=address></div>
-            <div role=email class=email></div>
-            <div role=phone class=phone></div>
-            <div role=website class=website></div>
+                <div role=address class=address>${overview['address']}</div>
+                <div role=email class=email>${overview['contact']['email']}</div>
+                <div role=phone class=phone>${overview['contact']['phone']}</div>
+                <div role=website class=website>${overview['website']}</div>
+            </div>
         </div>
         <div id=title>
             <div role=name class=name>
-                <div class=first></div>
-                <div class=last></div>
+                <div class=first>${overview['name']['first']}</div>
+                <div class=last>${overview['name']['last']}</div>
             </div>
         </div>`;
-        // now lets fill contact info, name, and objective
-        document.querySelector(".contact .address").innerText = overview['address'];
-        document.querySelector(".contact .email").innerText = overview['contact']['email'];
-        document.querySelector(".contact .phone").innerText = overview['contact']['phone'];
-        document.querySelector(".contact .website").innerText = overview['website'];
-        // set name
-        document.querySelector(".name .first").innerText = overview['name']['first'];
-        document.querySelector(".name .last").innerText = overview['name']['last']; 
-      }
     }
-  );
+    asText(){
+        let sep = '\n\n'
+        var capFirst = (str)=>{return str[0].toUpperCase()+str.slice(1).toLowerCase()}
+        let intro = (capFirst(this.querySelector('.name .first').innerText)+' '+capFirst(this.querySelector('.name .last').innerText)+sep+
+            this.querySelector('.address').innerText+sep+this.querySelector('.email').innerText+sep+this.querySelector('.phone').innerText+sep+
+            this.querySelector('.website').innerText)
+        return intro
+    }
+  }
+);
+
+// generic class for section
+class ResumeSection extends HTMLElement{
+    constructor(){super()}
+    asText(){//get the section as a string
+    let title = this.titleAsText();
+    let data = this.dataAsText();
+    return title+data+'\n';
+    }
+    titleAsText(){return format_section_head(this.querySelector('.title').innerText.toUpperCase())}
+    dataAsText(){return this.querySelector('.data').innerText}
+}
 
 // element for education
-customElements.define('resume-education', class extends HTMLElement {
+customElements.define('resume-education', class extends ResumeSection {
     constructor() {
       super();
       // start by adding default html and attributes
@@ -97,9 +120,17 @@ customElements.define('resume-education', class extends HTMLElement {
           mylist.appendChild(mynode);
       }
     }
+    dataAsText(){
+        var format_edu_item = (item)=>{return [
+            `${item.querySelector('.degree_type').innerText}, ${item.querySelector('.degree').innerText}`,
+            `${item.querySelector('.institution').innerText}, ${item.querySelector('.city').innerText}`, 
+            `${item.querySelector('.state').innerText}`, 
+            `${item.querySelector('.stop').innerText}`].join(', ')}
+        return format_list(Array.from(this.querySelector('.data ul').children).map(format_edu_item),0);
+    }
 });
 
-customElements.define('resume-work-experience', class extends HTMLElement {
+customElements.define('resume-work-experience', class extends ResumeSection {
     constructor() {
       super();
       // start by adding default html and attributes
@@ -125,7 +156,6 @@ customElements.define('resume-work-experience', class extends HTMLElement {
                     <div class=comments></div>
                 </li>
             </template>
-            <ul></ul>
         </div>`;
         let data = experience;
         let mylist = document.createElement('ul');
@@ -138,8 +168,7 @@ customElements.define('resume-work-experience', class extends HTMLElement {
             var mynode = temp.content.cloneNode(true);
             var val = data[i];
             // some preprocessing
-            var start = new Date(Date.parse(val['start'])); var stop = new Date(Date.parse(val['stop']));
-            val['start_formatted'] = start.getMonth()+'/'+start.getFullYear(); val['stop_formatted'] = stop.getMonth()+'/'+stop.getFullYear();
+            val['start_formatted'] = format_date(val['start']); val['stop_formatted'] = format_date(val['stop']);
             // set the data
             var data_vals = Array.from(mynode.children[0].children).map((x)=>x.classList[0]) // get the ids
             // now try and set the values
@@ -157,9 +186,20 @@ customElements.define('resume-work-experience', class extends HTMLElement {
             mylist.appendChild(mynode);
         }
     }
+    dataAsText(){
+        var exp_list = this.querySelector('.data ul');
+        var format_experience_comment = (comments)=>{return format_list(Array.from(comments.querySelector('ul').children).map(v=>v.innerText),1)}
+        var format_experience = (exp)=>{
+            var exptitle = [exp.querySelector('.position').innerText,exp.querySelector('.employer').innerText,
+                    exp.querySelector('.city').innerText,exp.querySelector('.state').innerText,
+                    `${exp.querySelector('.start').innerText}-${exp.querySelector('.stop').innerText}`].join(', ');
+            return exptitle+'\n'+format_experience_comment(exp.querySelector('.comments'))
+        }
+        return format_list(Array.from(exp_list.children).map(format_experience),0)
+    }
 });
 
-customElements.define('resume-skills', class extends HTMLElement {
+customElements.define('resume-skills', class extends ResumeSection {
     constructor() {
       super();
       // start by adding default html and attributes
@@ -184,7 +224,7 @@ customElements.define('resume-skills', class extends HTMLElement {
     }
 });
 
-customElements.define('resume-objective', class extends HTMLElement {
+customElements.define('resume-objective', class extends ResumeSection {
     constructor() {
       super();
       // start by adding default html and attributes
@@ -195,12 +235,11 @@ customElements.define('resume-objective', class extends HTMLElement {
             #${this.id} li{font-weight: normal;}
         </style>
         <div class=title>Objective</div>
-        <div class=data></div>`;
-        this.querySelector(".data").innerText = overview['objective'];
+        <div class=data>${overview['objective']}</div>`;
     }
 });
 
-customElements.define('resume-publications', class extends HTMLElement {
+customElements.define('resume-publications', class extends ResumeSection {
     constructor() {
       super();
       // start by adding default html and attributes
@@ -244,5 +283,8 @@ customElements.define('resume-publications', class extends HTMLElement {
             mynode.querySelector('li').innerHTML = cite;
             mylist.appendChild(mynode);
         }
+    }
+    dataAsText(){
+        return format_enum(Array.from(this.querySelector('.data .publication_list').children).map(v=>v.innerText),0,1);
     }
 });

@@ -51,6 +51,19 @@ theme-selector{
     padding:20px;
 }
 
+save-as-text{
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    margin:20px;
+	padding:2px;
+	text-decoration: none;
+	background-color:var(--background-color);
+	border:2px solid;
+	border-radius:3px;
+}
+save-as-text a{text-decoration:none;color:var(--text-color);}
+
 @media print{
     /* make sure were using light mode */
     html{
@@ -59,7 +72,7 @@ theme-selector{
         --text-color:var(--light-text) !important;
         --accent-color:var(--light-accent) !important;
     }
-    input{
+    input,save-as-text{
         visibility: hidden !important;
     }
     @page{

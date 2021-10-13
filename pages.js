@@ -16,7 +16,7 @@ function CVPage(){
         <resume-work-experience></resume-work-experience>
         <resume-publications></resume-publications>
     </main>
-    
+    <save-as-text></save-as-text>
     <footer></footer>`;
 }
 
@@ -33,6 +33,7 @@ function ResumePage(){
         <resume-skills></resume-skills>
         <resume-work-experience count=4></resume-work-experience>
     </main>
+    <save-as-text></save-as-text>
     <footer></footer>`;
 }
 
