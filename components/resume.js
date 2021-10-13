@@ -8,8 +8,9 @@ import publications from '/data/publications.json' assert {type:"json"};
 
 //some useful formatting functions
 // some useful lambda functions
+var list_delims = ['>','-','*']
 var format_section_head = (title)=> title.toUpperCase()+'\n'+'#'.repeat(25)+'\n';
-var format_list = (list,level=1)=> list.map((v)=>' '.repeat(2*level)+'  - '+v).join('\n')
+var format_list = (list,level=1)=> list.map((v)=>' '.repeat(2*level)+`  ${list_delims[level%list_delims.length]} `+v).join('\n')
 var format_enum = (list,level=1,start=0)=> list.map((v,i)=>' '.repeat(2*level)+`  ${i+start}. `+v).join('\n')
 var format_date = (date)=> {
     var date = new Date(Date.parse(date));
