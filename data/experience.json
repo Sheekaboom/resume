@@ -1,19 +1,5 @@
 [
     {
-        "title":"PhD Candidate",
-        "employer":"Colorado School of Mines",
-        "start":"2017-8-15",
-        "stop":"2021-12-20",
-        "city":"Golden",
-        "state":"Colorado",
-        "country":"USA",
-        "comments":[
-            "Researching the usage of Monte Carlo techniques to improve channel estimation for fifth-generation millimeter-wave wireless communication systems",
-            "Developed and verified software to simulate RF hardware in large-scale phased arrays and measured wireless propagation channels to evaluate channel estimators in 5G Millimeter-Wave communications systems.",
-            "Accelerated simulations of RF hardware and electromagnetic simulations using multiple GPUs and distributed computing systems."
-        ]
-    },
-    {
         "title":"Graduate Researcher",
         "employer":"National Institute of Standards and Technology",
         "start":"2017-8-15",
@@ -25,6 +11,20 @@
             "Creating new measurement and verification techniques with LTE and 5G devices for the detection of anomalies in communications systems.",
             "Developed software and measurement techniques for wideband wireless virtual array measurements with the NIST SAMURAI system.",
             "learned established measurement tools, techniques, and calibrations from experts with hands-on instruction."
+        ]
+    },
+    {
+        "title":"PhD Candidate",
+        "employer":"Colorado School of Mines",
+        "start":"2017-8-15",
+        "stop":"2021-12-20",
+        "city":"Golden",
+        "state":"Colorado",
+        "country":"USA",
+        "comments":[
+            "Researching the usage of Monte Carlo techniques to improve channel estimation for fifth-generation millimeter-wave wireless communication systems",
+            "Developed and verified software to simulate RF hardware in large-scale phased arrays and measured wireless propagation channels to evaluate channel estimators in 5G Millimeter-Wave communications systems.",
+            "Accelerated simulations of RF hardware and electromagnetic simulations using multiple GPUs and distributed computing systems."
         ]
     },
     {
