@@ -1,6 +1,7 @@
 [
     {
         "title":"Graduate Researcher",
+        "position":"Graduate Researcher",
         "employer":"National Institute of Standards and Technology",
         "start":"2017-8-15",
         "stop":"2021-12-20",
@@ -15,6 +16,7 @@
     },
     {
         "title":"PhD Candidate",
+        "position":"PhD Candidate",
         "employer":"Colorado School of Mines",
         "start":"2017-8-15",
         "stop":"2021-12-20",
