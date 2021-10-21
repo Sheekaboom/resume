@@ -6,21 +6,6 @@ body {
 }
 /* header info */
 header{text-align:right;}
-/* contact layout */
-.contact .email,.phone{display:inline;}
-.contact .email::after{content:" | ";}
-/* name layout */
-.name .first,.last{display:inline;} 
-.name .first::after{content:" ";}
-header #title{
-	text-align:left;
-	font-size:16pt;
-	background:var(--accent-color);
-	color:var(--text-color);
-	padding:5px 10px;
-	margin:5px 0px;
-	text-transform: uppercase;
-}
 
 /* common section formatting */
 .section{
@@ -28,11 +13,11 @@ header #title{
   	grid-template-columns: repeat(20, 1fr);
 	grid-column-gap:5px;
 }
-.section:first-of-type{margin-top:1.2em;}
+.section:first-child{margin-top:1.2em;}
 .section:not(:last-child):after { 
 	width:100%;
         grid-column:1/end;	
-	margin:25px 0px;  
+	margin:15px 0px;  
 	height:2px; 
 	background: var(--accent-color); 
 	content:"" 
@@ -75,22 +60,4 @@ header #title{
 #skills li{
 	font-weight: normal;
 }
-/* education formatting */
-#education #degree_type,#degree{display:inline;font-variant: none;}/*text-transform: uppercase;}*/
-#education #degree_type::after{content:" | ";}
-#education #degree::after{content:"";display:block;}
-#education #institution{display:inline;}
-#education #institution::after{content:", "}
-#education #city,#state,#country{display:inline; } 
-#education #city,#state::after{content:", "}
-#education #date,#gpa{display:none;}
-/* experience formatting */
-#experience < li{font-size:0px;}
-#experience #title,#employer{display:inline;}
-#experience #title::after{content:", ";}
-#experience #start,#stop{display:inline;}
-#experience #start::before{content:" (";display:inline;}
-#experience #start::after{content:" -";}
-#experience #stop::after{content:")";}
-#experience #city,#state,#country{display:none;}
 

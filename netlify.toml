@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/cv"
+  to = "/index.html"
+  status = 301
+
+[[redirects]]
+  from = "/resume"
+  to = "/index.html"
+  status = 301

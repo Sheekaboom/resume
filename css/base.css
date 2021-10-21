@@ -44,12 +44,25 @@ html{
     color:var(--text-color);
 }
 
-#theme_selector{
+theme-selector{
     position: fixed;
     bottom: 0;
     right: 0;
     padding:20px;
 }
+
+save-as-text{
+    position: fixed;
+    bottom: 0;
+    right: 40px;
+    margin:20px;
+	padding:2px;
+	text-decoration: none;
+	background-color:var(--background-color);
+	border:2px solid;
+	border-radius:3px;
+}
+save-as-text a{text-decoration:none;color:var(--text-color);}
 
 @media print{
     /* make sure were using light mode */
@@ -59,7 +72,7 @@ html{
         --text-color:var(--light-text) !important;
         --accent-color:var(--light-accent) !important;
     }
-    #theme_selector{
+    input,save-as-text{
         visibility: hidden !important;
     }
     @page{
@@ -68,4 +81,9 @@ html{
     body{
         margin:0 !important;
     }
+}
+
+.slide_out{
+    transform: translateY(-100vh);
+    transition-duration:0.3s;
 }

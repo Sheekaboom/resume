@@ -29,6 +29,7 @@
     },
     {
         "title":"Summer Intern",
+        "position":"Summer Intern",
         "employer":"United Launch Alliance",
         "start":"2015-5-15",
         "stop":"2016-8-15",
@@ -43,6 +44,7 @@
     },
     {
         "title":"Undergraduate Research Assistant",
+        "position":"Undergraduate Research Assistant",
         "employer":"University of Colorado",
         "start":"2014-8-15",
         "stop":"2017-5-15",
@@ -57,6 +59,7 @@
     },
     {
         "title":"Teaching Assistant",
+        "position":"Teaching Assistant",
         "employer":"University of Colorado",
         "start":"2015-8-15",
         "stop":"2016-5-15",
@@ -70,6 +73,7 @@
     },
     {
         "title":"Rocket Sat X EPS Team Member",
+        "position":"Rocket Sat X EPS Team Member",
         "employer":"Colorado Space Grant Consortium",
         "start":"2014-1-15",
         "stop":"2014-8-15",
@@ -83,6 +87,7 @@
     },
     {
         "title":"Sales Associate",
+        "position":"Sales Associate",
         "employer":"Merrell Shoes",
         "start":"2013-6-15",
         "stop":"2014-8-15",
