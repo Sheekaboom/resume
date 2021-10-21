@@ -55,7 +55,7 @@
         "country":"USA",
         "comments":[
             "Simulated electromagnetic propagation with a high-order finite difference time domain (FDTD) algorithm.",
-            "Implementted electromagnetic simulations on GPUs and a supercomputer using CUDA and MPI.",
+            "Implemented electromagnetic simulations on GPUs and a supercomputer using CUDA and MPI.",
             "Developed methods for integrating high-order algorithms and complex CAD models into existing simulation software."
         ]
     },
