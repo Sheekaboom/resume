@@ -1,7 +1,9 @@
 [
-    "Serial and Parallel programming in Python, MATLAB, C/C++, FORTRAN, CUDA, MPI",
-    "RF/Analog/Digital Test and Measurement Equipment",
-    "Circuit Design, Analysis, and PCB design using ADS and KiCad",
+    "Data Analysis using Python, Numpy, Scipy, Pandas and MATLAB",
+    "Electromagnetic simulation, Finite Difference Methods",
+    "Electromagnetic Propagation, Phased Arrays, OFDM, Channel Estimation",
+    "High performance computing using C/C++, FORTRAN, CUDA, and MPI using SLURM",
+    "RF/Analog/Digital Test and Measurement Equipment and Automation",
     "Experienced in Linux and Windows Operating Systems"
 ]
 
