@@ -1,11 +1,11 @@
 [
     {
-        "title":"PhD Candidate",
-        "position":"PhD Candidate",
-        "employer":"Colorado School of Mines",
+        "title":"Graduate Researcher",
+        "position":"Graduate Researcher",
+        "employer":"National Institute of Standards and Technology",
         "start":"2017-8-15",
         "stop":"2021-12-20",
-        "city":"Golden",
+        "city":"Boulder",
         "state":"Colorado",
         "country":"USA",
         "comments":[
@@ -15,12 +15,12 @@
         ]
     },
     {
-        "title":"Graduate Researcher",
-        "position":"Graduate Researcher",
-        "employer":"National Institute of Standards and Technology",
+        "title":"PhD Candidate",
+        "position":"PhD Candidate",
+        "employer":"Colorado School of Mines",
         "start":"2017-8-15",
         "stop":"2021-12-20",
-        "city":"Boulder",
+        "city":"Golden",
         "state":"Colorado",
         "country":"USA",
         "comments":[
