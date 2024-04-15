@@ -9,9 +9,9 @@
         "state":"Remote",
         "country":"USA",
         "comments":[
-            "- Design and create new features to improve the capabilties of Swoop's product and meet the needs of their customers",
-            "- Develop operating system functionality to parallelize Swoop's product on ARM and x86 architectures",
-            "- Write embedded software using C, Rust, and Python to implement all new designs"
+            "Design and create new features to improve the capabilties of Swoop's product and meet the needs of their customers",
+            "Develop operating system functionality to parallelize Swoop's product on ARM and x86 architectures",
+            "Write embedded software using C, Rust, and Python to implement all new designs"
         ],
         "skills":["C","Rust","Python","x86","ARM","git","network protocols"]
     },
