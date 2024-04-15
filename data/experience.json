@@ -61,7 +61,7 @@
             "Simulated electromagnetic propagation using finite difference time domain (FDTD) algorithms, including high-order algorithms for improved accuracy.",
             "Implemented electromagnetic simulations using FDTD on GPUs and a supercomputer using FORTRAN, C, CUDA and MPI with SLURM.",
             "Integrated complex CAD models into electromagnetic simulations using high-order algorithms by leveraging existing software."
-        ]
+        ],
         "skills":["Electromagnetics","Finite-Difference Time-Domain","Fortran","C","CUDA","Message Passing Interface","Computer Aided Design"]
     },
     {
