@@ -1,5 +1,21 @@
 [
     {
+        "title":"Embedded Software Developer",
+        "position":"Embedded Software Developer",
+        "employer":"Swoop Search LLC",
+        "start":"2022-1-13",
+        "stop":"Present",
+        "city":"Remote",
+        "state":"Remote",
+        "country":"USA",
+        "comments":[
+            "- Design and create new features to improve the capabilties of Swoop's product and meet the needs of their customers",
+            "- Develop operating system functionality to parallelize Swoop's product on ARM and x86 architectures",
+            "- Write embedded software using C, Rust, and Python to implement all new designs"
+        ],
+        "skills":["C","Rust","Python","x86","ARM","git","network protocols"]
+    },
+    {
         "title":"Graduate Researcher",
         "position":"Graduate Researcher",
         "employer":"National Institute of Standards and Technology",
@@ -11,23 +27,26 @@
         "comments":[
             "Measuring LTE and 5G devices and developing algorithms for the detection of anomalies in communications systems.",
             "Developed measurement techniques a python software suite for automated wide-band wireless virtual array measurements and analysis with the NIST SAMURAI system.",
+            "Performed data analysis in Python and MATLAB to post-process measurement data and generate visualizations to prevent to project managers.",
             "Learned established measurement tools, techniques, and calibrations for providing traceable measurements."
-        ]
+        ],
+        "skills":["Elecgtromagnetics","Measurement techniques","5G","LTE","MATLAB","Python","Vector Network Analyzers"]
     },
     {
-        "title":"PhD Candidate",
-        "position":"PhD Candidate",
+        "title":"PhD Candidate Reasearcher",
+        "position":"PhD Candidate Researcher",
         "employer":"Colorado School of Mines",
         "start":"2017-8-15",
-        "stop":"2022-1-30",
+        "stop":"2022-5-5",
         "city":"Golden",
         "state":"Colorado",
         "country":"USA",
         "comments":[
-            "Researching the usage of Monte Carlo techniques to improve channel estimation for 5G millimeter-wave wireless communication systems",
+            "Researched the usage of Monte Carlo techniques to improve channel estimation for 5G millimeter-wave wireless communication systems",
             "Developed and verified software to simulate hardware and large-scale phased arrays in measured propagation environments to evaluate channel estimators in 5G millimeter-Wave communications systems.",
             "Accelerated simulations of phased array hardware and electromagnetic simulations with multiple CPUs and GPUs using python, C, and CUDA."
-        ]
+        ],
+        "skills":["Electromagnetics","Simulation","GPU","Parallel Processing","Python","C","CUDA"]
     },
     {
         "title":"Undergraduate Research Assistant",
@@ -43,6 +62,7 @@
             "Implemented electromagnetic simulations using FDTD on GPUs and a supercomputer using FORTRAN, C, CUDA and MPI with SLURM.",
             "Integrated complex CAD models into electromagnetic simulations using high-order algorithms by leveraging existing software."
         ]
+        "skills":["Electromagnetics","Finite-Difference Time-Domain","Fortran","C","CUDA","Message Passing Interface","Computer Aided Design"]
     },
     {
         "title":"Summer Intern",
@@ -57,7 +77,8 @@
             "Helped coordinate the development of spaceflight subsystems for future human space launch systems",
             "Worked with a team to analyze accidents and errors that occurred during the construction and launch of aerospace systems.",
             "Advancing professional skills and experience by solving problems teams of engineers from various backgrounds"
-        ]
+        ],
+        "skills":["Accident Analysis","Error Prevention","Human Spaceflight"]
     },
     {
         "title":"Teaching Assistant",
@@ -71,7 +92,8 @@
         "comments":[
             "Worked with new students to design and build open ended engineering design projects to help in the local community.",
             "Mentored student's professional skills and design experience to help them get started in their college careers as engineering students."
-        ]
+        ],
+        "skills":["Teaching","Mentoring"]
     },
     {
         "title":"Rocket Sat X EPS Team Member",
@@ -85,7 +107,8 @@
         "comments":[
             "Developed an electronic system to inductively melt aluminum in under a minute.",
             "Manufactured PCBs and circuit peripherals to track and store sensor measurements from the system."
-        ]
+        ],
+        "skills":["Printed Circuit Board Design","Project management"]
     },
     {
         "title":"Sales Associate",
